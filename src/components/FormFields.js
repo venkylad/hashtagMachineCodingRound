@@ -10,7 +10,7 @@ const FormFields = () => {
     email: "",
     timeZone: "Europe/Andorra",
     password: "",
-    checked: false
+    checked: true
   };
 
   const handleSubmit = (e) => {
@@ -37,8 +37,6 @@ const FormFields = () => {
         alert(
           "Password length need to be atleast 8 - 15 characters long. password need to have a number, letter, and symbol"
         );
-      } else if (checked === false) {
-        alert("Please agree the Terms and Conditions");
       } else {
         console.log(details);
         setDetails(initialState);
@@ -133,7 +131,7 @@ const FormFields = () => {
         <div className="d-flex flex-column justify-content-center align-items-center">
           <Form.Check
             type="checkbox"
-            checked={details.checkbox}
+            checked={true}
             onChange={(e) =>
               setDetails({ ...details, checked: e.target.checked })
             }
