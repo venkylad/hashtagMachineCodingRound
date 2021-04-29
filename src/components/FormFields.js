@@ -25,8 +25,7 @@ const FormFields = () => {
       lastName !== "" &&
       userName !== "" &&
       password !== "" &&
-      email !== "" &&
-      checked !== false
+      email !== ""
     ) {
       if (!email.match(emailRegex)) {
         alert("Email need to be valid format");
